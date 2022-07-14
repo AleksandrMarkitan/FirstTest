@@ -1,4 +1,29 @@
-body{
-    background-color: #fff;
-    color: 2a2a2a;
+.box {
+  display: block;
+  width: 300px;
+}
+
+.box::before {
+  display: block;
+  content: "Это текст в ::before";
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  display: block;
+  content: "Это текст в ::after";
+  font-size: 30px;
+  color: teal;
+}
+
+/* Применить стили к псевдоэлементу .box::before при ховере по элементу .box */
+.box:hover::before {
+  color: green;
+}
+
+/* Применить стили к псевдоэлементу .box::after при ховере по элементу .box */
+.box:hover::after {
+  color: tomato;
+  color: #00b9ff;
 }
